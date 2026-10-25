@@ -74,7 +74,11 @@
     <string name="installed_app_title">แอปที่ติดตั้งภายในเครื่อง</string>
 
     <string name="app_info_button_app_info">ดูข้อมูล</string>
-    <string name="app_info_button_mark_as_safe">ยืนยันว่าปลอดภัย</string>
+    <string name="app_info_button_mark_as_safe">เชื่อถือแอปนี้</string>
+    <string name="app_info_button_remove_trust">เลิกเชื่อถือ</string>
+    <string name="app_info_trusted_by_user">คุณเลือกเชื่อถือแอปนี้</string>
+    <string name="app_info_user_trust_description">ความเชื่อถือมีผลเฉพาะแอปนี้กับใบรับรองการลงนามปัจจุบัน ไม่ได้ยืนยันผู้ติดตั้งหรือรับรองว่าแอปปลอดภัย คุณเลิกเชื่อถือได้ที่นี่ทุกเมื่อ</string>
+    <string name="app_info_trust_update_failed">เปลี่ยนความเชื่อถือไม่ได้ แอปอาจถูกถอนการติดตั้งหรืออ่านใบรับรองการลงนามไม่ได้ โปรดตรวจสอบใหม่แล้วลองอีกครั้ง</string>
     <string name="app_info_general_section_title">ข้อมูลทั่วไป</string>
     <string name="app_info_installed_at">ติดตั้งเมื่อ</string>
     <string name="app_info_installed_by">ติดตั้งโดย</string>

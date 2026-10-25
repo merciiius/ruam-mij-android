@@ -74,7 +74,11 @@
     <string name="installed_app_title">Installed Apps</string>
 
     <string name="app_info_button_app_info">App info</string>
-    <string name="app_info_button_mark_as_safe">Mark as safe</string>
+    <string name="app_info_button_mark_as_safe">Trust this app</string>
+    <string name="app_info_button_remove_trust">Remove trust</string>
+    <string name="app_info_trusted_by_user">Trusted by you</string>
+    <string name="app_info_user_trust_description">Trust applies only to this app and its current signing certificate. It does not verify its installer or prove the app is safe. You can remove trust here at any time.</string>
+    <string name="app_info_trust_update_failed">Could not update trust. The app may have been removed or its signing certificate could not be read. Scan again and retry.</string>
     <string name="app_info_general_section_title">General Information</string>
     <string name="app_info_installed_at">Installed on</string>
     <string name="app_info_installed_by">Installed by</string>
