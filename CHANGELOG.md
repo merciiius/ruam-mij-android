@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.3.2
+
+- Add an offline Thai/English scam-prevention guide in About App with emergency steps, expandable topics, dated official references and a user-initiated AOC 1441 dialer action.
+- Cover AI impersonation, malicious links and QR codes, remote support/screen sharing, task jobs, investment-style manipulation, recovery scams and account protection. Explain the prerequisites and variable availability of newer Android protections.
+- Clarify that installer recognition, user trust and an empty screen-sharing result cannot guarantee safety; distinguish requested permissions from grants.
+- Update privacy disclosures to describe local trust storage, Android backup and external browser/dialer actions.
+- Add UI regression checks for guide navigation, expanding/collapsing, source selection and the help action in Thai and English on a 360dp-wide screen.
+- See [content sources and maintenance](docs/SCAM_GUIDE_SOURCES.md). This release adds educational content, not automatic scam/deepfake detection.
+
+Validation on Windows/JDK 21, 2026-10-25: debug APK built with versionName 1.3.2/versionCode 30; all 43 unit/UI tests passed; lint passed with warnings. Recorded and visually reviewed the guide in Thai and English at 360dp width. The merged manifest has neither INTERNET nor CALL_PHONE permission. A physical-device check is still required before public APK release.
+
+[Thai guide preview](image/v1.3.2-safety-guide-th.png) · [English guide preview](image/v1.3.2-safety-guide-en.png)
+
 ## 1.3.1
 
 - Fix trusting an app: a user decision now applies to that package and signing certificate, without changing the installer's verification status or trusting other apps from the same installer.

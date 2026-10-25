@@ -22,8 +22,8 @@ android {
         applicationId = "com.akexorcist.ruammij"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 29
-        versionName = "1.3.1"
+        versionCode = 30
+        versionName = "1.3.2"
 
         testInstrumentationRunner = "androidx.test.runner.InstrumentationTestRunner"
         vectorDrawables {
