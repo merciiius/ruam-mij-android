@@ -14,7 +14,9 @@ Focused trust regression checks:
 .\gradlew.bat :app:testDebugUnitTest --tests '*UserTrustTest' --tests '*DeviceRepositoryTrustTest' --tests '*TrustMigrationTest'
 ```
 
-Unit test reports are under `app/build/reports/tests/testDebugUnitTest/`. The debug APK is under `app/build/outputs/apk/debug/`. Debug APKs use a development signing key and cannot update installations signed with the upstream release key.
+Unit test reports are under `app/build/reports/tests/testDebugUnitTest/`. The debug APK is under `app/build/outputs/apk/debug/`. Debug builds use the separate application ID `com.akexorcist.ruammij.debug`, version suffix `-test`, and launcher label `Ruam Mij (Test)` / `รวมมิจ (ทดสอบ)`. They can be installed alongside upstream releases without deleting existing data. Their local trust database is independent.
+
+Debug APKs use a development signing key and cannot update installations signed with the upstream release key. Older debug APKs built before this isolation change used the upstream application ID; do not uninstall an existing app just to try the new separate test build. The original `ruam-mij-1.3.2-debug.apk` was such a same-ID artifact; use `ruam-mij-1.3.2-test.apk` for side-by-side testing.
 
 To record screenshots for visual review (quote the property argument in PowerShell):
 

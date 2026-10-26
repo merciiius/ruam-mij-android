@@ -2,6 +2,9 @@
 
 ## 1.3.2
 
+- Isolate debug installations with the `.debug` application ID suffix, `-test` version suffix and a distinct Thai/English launcher label so the test APK can coexist with an upstream installation signed by another key.
+
+The isolated test package was revalidated on 2026-10-26: debug build, all 43 tests and lint passed. APK inspection confirmed package `com.akexorcist.ruammij.debug`, version `1.3.2-test`, a separate provider authority, the Thai launcher label and ARM64 support. This resolves the package/signature collision by installing a separate app; physical installation on the reported Samsung S24 Ultra still needs user confirmation.
 - Add an offline Thai/English scam-prevention guide in About App with emergency steps, expandable topics, dated official references and a user-initiated AOC 1441 dialer action.
 - Cover AI impersonation, malicious links and QR codes, remote support/screen sharing, task jobs, investment-style manipulation, recovery scams and account protection. Explain the prerequisites and variable availability of newer Android protections.
 - Clarify that installer recognition, user trust and an empty screen-sharing result cannot guarantee safety; distinguish requested permissions from grants.
