@@ -3,8 +3,6 @@
 ## 1.3.2
 
 - Isolate debug installations with the `.debug` application ID suffix, `-test` version suffix and a distinct Thai/English launcher label so the test APK can coexist with an upstream installation signed by another key.
-
-The isolated test package was revalidated on 2026-10-26: debug build, all 43 tests and lint passed. APK inspection confirmed package `com.akexorcist.ruammij.debug`, version `1.3.2-test`, a separate provider authority, the Thai launcher label and ARM64 support. This resolves the package/signature collision by installing a separate app; physical installation on the reported Samsung S24 Ultra still needs user confirmation.
 - Add an offline Thai/English scam-prevention guide in About App with emergency steps, expandable topics, dated official references and a user-initiated AOC 1441 dialer action.
 - Cover AI impersonation, malicious links and QR codes, remote support/screen sharing, task jobs, investment-style manipulation, recovery scams and account protection. Explain the prerequisites and variable availability of newer Android protections.
 - Clarify that installer recognition, user trust and an empty screen-sharing result cannot guarantee safety; distinguish requested permissions from grants.
@@ -13,6 +11,8 @@ The isolated test package was revalidated on 2026-10-26: debug build, all 43 tes
 - See [content sources and maintenance](docs/SCAM_GUIDE_SOURCES.md). This release adds educational content, not automatic scam/deepfake detection.
 
 Validation on Windows/JDK 21, 2026-10-25: debug APK built with versionName 1.3.2/versionCode 30; all 43 unit/UI tests passed; lint passed with warnings. Recorded and visually reviewed the guide in Thai and English at 360dp width. The merged manifest has neither INTERNET nor CALL_PHONE permission. A physical-device check is still required before public APK release.
+
+The isolated test package was revalidated on 2026-10-26: debug build, all 43 tests and lint passed. APK inspection confirmed package `com.akexorcist.ruammij.debug`, version `1.3.2-test`, a separate provider authority, the Thai launcher label and ARM64 support. The user confirmed successful installation of this test APK on a Samsung S24 Ultra on 2026-10-26. Full functional testing on that device has not yet been reported.
 
 [Thai guide preview](image/v1.3.2-safety-guide-th.png) · [English guide preview](image/v1.3.2-safety-guide-en.png)
 
